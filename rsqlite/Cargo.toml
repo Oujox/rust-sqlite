@@ -1,0 +1,10 @@
+[package]
+name = "rsqlite"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+rust-version.workspace = true
+edition = "2021"
+
+[dependencies]
+rsqlite-macros = { path = "../rsqlite-macros" }

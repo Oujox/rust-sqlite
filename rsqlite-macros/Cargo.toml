@@ -1,0 +1,16 @@
+[package]
+name = "rsqlite-macros"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+rust-version.workspace = true
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+rsqlite-macros-internals = { path = "../rsqlite-macros-internals" }
+proc-macro2 = { workspace = true, features = ["proc-macro"] }
+quote = { workspace = true, features = ["proc-macro"] }
+syn = { workspace = true, features = ["clone-impls", "derive", "parsing", "printing", "proc-macro"] }
